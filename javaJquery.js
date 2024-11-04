@@ -12,23 +12,25 @@ const setUpBoxes = ()=> {
 
 const showInformation = () => { 
     setUpBoxes(); 
-    jQuery.each($("box"), nameIngredients);
+    jQuery.each($(".box"), nameIngredients);
     $(".box").on("click", function() {
-        let IndexOfCocktail = $(".box").index(this); 
-        $(this).find("p.cocktailRecipe").text(cocktails[IndexOfCocktail].calories);
+        let indexOfCocktail = $(".box").index(this); 
+        $(this).find("p.cocktailRecipe").text("Calories: " + cocktails[indexOfCocktail].calories);
         
     });
     $(".box").on("mouseover", function(){ 
-        let IndexOfCocktail = $(".box").index(this);
+        let indexOfCocktail = $(".box").index(this);
 
         $(this)
         .find("p.cocktailRecipe")
         .text(
-            "Recipe: " + cocktails[IndexOfCocktail].recipe 
+            "Recipe: " + cocktails[indexOfCocktail].recipe 
         );
     });
     $(".box").on("mouseout", function (){ 
-        let IndexOfCocktail = $(".box").index(this);
+        let indexOfCocktail = $(".box").index(this);
+
+        $(this).find("p.cocktailRecipe").text(animals[indexOfCocktail].name + "Ingredients" + cocktails[index].ingredients);
     });
 };
 
