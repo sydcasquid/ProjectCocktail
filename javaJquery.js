@@ -30,14 +30,14 @@ const showInformation = () => {
     $(".box").on("mouseout", function (){ 
         let indexOfCocktail = $(".box").index(this);
 
-        $(this).find("p.cocktailRecipe").text(animals[indexOfCocktail].name + "Ingredients" + cocktails[index].ingredients);
+        $(this).find("p.cocktailRecipe").text(animals[indexOfCocktail].name + " Ingredients: " + cocktails[index].ingredients);
     });
 };
 
 
 const nameIngredients = (index) => { 
     console.log(cocktails[index].ingredients);
-    $(".cocktailRecipe").eq(index).text(cocktails[index].name + "Ingredients: " + cocktails[index].ingredients);
+    $(".cocktailRecipe").eq(index).text(cocktails[index].name + " Ingredients: " + cocktails[index].ingredients);
 };
 
 $(document).ready(showInformation);
