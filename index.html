@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Cocktail Cart</title>
+    <script src="./lib/jquery-3.7.1.js"></script>
+    <script src="cocktails.js" defer ></script>
+    <script src="javaJquery.js" defer></script>
+    <style> 
+        .wrapper { 
+            display:flex; 
+            flex-direction: column;
+            flex-wrap: wrap; 
+            width: 100%;
+            border: 10px dotted red; 
+        }
+
+        .box { 
+            flex: 0 0 300px;
+            height: 120px;
+            background-color: white;
+            margin: 5px; 
+            font-size: xx-large; 
+            color: black; 
+            box-sizing: border-box;
+            padding: 2px; 
+            margin: 2px; 
+            font-size: medium;
+        }
+
+        button { 
+            background-color: green;
+            color: black; 
+            font-size: larger;
+        }
+
+        h1 { 
+            width: 100%;
+            background-color: white; 
+            color: green; 
+            text-align: center;
+            font-size: xx-large; 
+        }
+
+        .image {
+            width: 100px;
+            height: 100px; 
+            margin-left: auto; 
+            margin-right: auto;
+        }
+
+        .cocktailRecipe { 
+            float: right; 
+            margin-right: 3px; 
+            font-size: large; 
+            font-weight: bold; 
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1> Holiday Cocktails</h1>
+    <p>Hover over the drink to view the recipe, click to see calories. </p>
+
+    <div class="wrapper">
+
+    </div>
+
+    
+</body>
+</html>
